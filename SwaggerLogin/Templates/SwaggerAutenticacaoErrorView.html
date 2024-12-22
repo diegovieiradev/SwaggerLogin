@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credenciais Inválidas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            font-size: 18px;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+
+        .redirect {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+    <script>
+        setTimeout(() => {
+            window.location.href = '/swagger-login';
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p class="message">Credenciais inválidas. Tente novamente.</p>
+        <p class="redirect">Redirecionando para a tela de login...</p>
+    </div>
+</body>
+</html>
