@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.csproj.user
+
+# Build results
+bin/
+obj/
+out/
+
+# Logs
+*.log
+
+# App settings
+appsettings.Development.json
+appsettings.Production.json
+appsettings.local.json
