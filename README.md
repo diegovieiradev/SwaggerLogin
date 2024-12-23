@@ -44,21 +44,10 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
-});```
+});
 
-#### 3.2 Configuração na classe `Program` para sessões
-
-Adicione o seguinte código para ativar o middleware de autenticação
-
-```csharp
 app.UseSession();
-app.UseMiddleware<ConfigureAuthorizationSwagger>();```
+app.UseMiddleware<ConfigureAuthorizationSwagger>();
 
-
-🛠️ Tecnologias Utilizadas
-
-C#
-.NET 6.0
-ASP.NET Core
 
 
